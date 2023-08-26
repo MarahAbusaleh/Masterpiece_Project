@@ -40,6 +40,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+  body{
+    overflow-x: hidden;
+  }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -66,7 +70,60 @@ body {
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
-
+  /**************** for images in shop *************/
+.contimg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerimg {
+            position: relative;
+            width: 140px; 
+            height: 300px; 
+        }
+        .shopimg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .shopimg:nth-child(1) {
+            z-index: 3;
+            top: 20%;
+            right: 1%;
+        }
+        .shopimg:nth-child(2) {
+            z-index: 1;
+            top: 50%;
+            left: 1%;
+            margin-right: 5px;
+            margin-left: -8px;
+            transform: translate(-50%, -50%);
+        }
+        .shopimg:nth-child(3) {
+            z-index: 1;
+            left: 102%;
+            top: 50%;
+            margin-left: 5px;
+            transform: translate(-50%, -50%);
+        }
+ /**************** end *************/
+/* drowpdown shop icon on nav */
+.dicon::after {
+  background: none !important;
+}
+/**************** end *************/
+/* weight dropdown */
+.weigthdm{
+  background-color: black !important;
+}
+.weightdi{
+  color: white !important;
+}
+.weightdi:hover{
+  color: black !important;
+}
+/**************** end *************/
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -2037,9 +2094,7 @@ fieldset:disabled a.btn {
     border-color: #78d5ef; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
-    color: #212529;
-    background-color: #4ac7ea;
-    border-color: #3fc3e8; }
+    color: #212529;}
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.5);
@@ -9363,3 +9418,5 @@ textarea.form-control {
             color:  brown;
             background-color: #ffffff;
         }
+
+        

@@ -4,7 +4,8 @@
     <title>Coffee Blend</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="shortcut icon" type="image/png" href="../images/SClogo.png" />
+	
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
@@ -72,7 +73,7 @@
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
 							<a class="dropdown-item" href="shop.html">Shop</a>
 							<!-- <a class="dropdown-item" href="product-single.html">Single Product</a> -->
-							<a class="dropdown-item" href="room.html">Cart</a>
+							<a class="dropdown-item" href="cart.html">Cart</a>
 							<a class="dropdown-item" href="checkout.html">Checkout</a>
 						</div>
 					</li>
@@ -114,7 +115,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 ftco-animate">
-					<div class="cart-list">
+					<div class="cart-list" style="overflow-x: hidden;">
 						<table class="table">
 							<thead class="thead-primary">
 								<tr class="text-center">
@@ -141,9 +142,9 @@
 									
 									<td class="quantity">
 										<div class="input-group mb-3">
-										<input type="text" name="quantity" class="quantity form-control input-number" value="2" min="1" max="100">
-									</div>
-								</td>
+											<input type="text" name="quantity" class="quantity form-control input-number" value="2" min="1" max="100">
+										</div>
+									</td>
 									
 									<td class="total">2 JOD</td>
 								</tr><!-- END TR-->
@@ -175,7 +176,7 @@
 			</div>
 			<!-- Cart Totals Details -->
 			<div class="row justify-content-end">
-				<div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
+				<div class="col col-lg-12 col-md-6 mt-5 cart-wrap ftco-animate">
 					<div class="cart-total mb-3">
 						<h3>Cart Totals</h3>
 						<p class="d-flex">
@@ -202,7 +203,7 @@
 		</div>
 	</section>
 	<!--//////////////////////////////////////// END Of Cart Section ////////////////////////////////////////-->
-
+	<hr style="border-top: 1px solid gray;">
 	<!----------------------------------------------- Footer ----------------------------------------------->
     <footer class="footer" id="footer" style="background-image: url(images/bg_4.jpg)">
         <div class="containerf">
