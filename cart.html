@@ -61,21 +61,8 @@
 					<li class="nav-item">
 						<a href="services.html" class="nav-link">Services</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a
-						class="nav-link dropdown-toggle"
-						href="room.html"
-						id="dropdown04"
-						data-toggle="dropdown"
-						aria-haspopup="true"
-						aria-expanded="false"
-						>Shop</a>
-						<div class="dropdown-menu" aria-labelledby="dropdown04">
-							<a class="dropdown-item" href="shop.html">Shop</a>
-							<!-- <a class="dropdown-item" href="product-single.html">Single Product</a> -->
-							<a class="dropdown-item" href="cart.html">Cart</a>
-							<a class="dropdown-item" href="checkout.html">Checkout</a>
-						</div>
+					<li class="nav-item">
+						<a href="shop.html" class="nav-link">Shop</a>
 					</li>
 					<li class="nav-item">
 						<a href="about.html" class="nav-link">About</a>
@@ -87,6 +74,11 @@
 						<a href="cart.html" class="nav-link">
 						<span class="icon icon-shopping_cart"></span>
 						<span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a>
+					</li>
+					<li class="nav-item cart">
+						<a href="registration.html" class="nav-link">
+						<span class="icon icon-user"></span>
+						<span class=" d-flex justify-content-center align-items-center"><small></small></span></a>
 					</li>
 				</ul>
 			</div>
@@ -116,7 +108,7 @@
 			<div class="row">
 				<div class="col-md-12 ftco-animate">
 					<div class="cart-list" style="overflow-x: hidden;">
-						<table class="table">
+						<table class="table col-lg-8">
 							<thead class="thead-primary">
 								<tr class="text-center">
 									<th>&nbsp;</th>
@@ -135,7 +127,6 @@
 									
 									<td class="product-name">
 										<h3>TURKISH COFFEE</h3>
-										<p>Experience the pure and intense essence of turkish coffee...</p>
 									</td>
 									
 									<td class="price">1 JOD</td>
@@ -156,7 +147,6 @@
 									
 									<td class="product-name">
 										<h3>ESPRESSO COFFEE</h3>
-										<p>Savor the concentrated richness and velvety smoothness...</p>
 									</td>
 									
 									<td class="price">2 JOD</td>
@@ -174,26 +164,53 @@
 					</div>
 				</div>
 			</div>
+			
 			<!-- Cart Totals Details -->
 			<div class="row justify-content-end">
-				<div class="col col-lg-12 col-md-6 mt-5 cart-wrap ftco-animate">
+				
+				<div class="row col-lg-6 mt-5 ">
+					<div class="col-lg-8 input-group mb-3">
+						<input type="text" name="coupon" class="coupon form-control input-number" min="0" max="100">
+					</div>
+					<div>
+						<p class="col-lg-4 text-center"><a href="#" class="btn btn-primary py-3 px-4">Apply Coupon</a></p>
+					</div>
+				</div>
+				
+				<div class="col col-lg-6 col-md-12 mt-5 cart-wrap ftco-animate">
 					<div class="cart-total mb-3">
 						<h3>Cart Totals</h3>
 						<p class="d-flex">
 							<span>Subtotal</span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
 							<span>4 JOD</span>
 						</p>
 						<p class="d-flex">
 							<span>Delivery</span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
 							<span>1.5 JOD</span>
 						</p>
 						<p class="d-flex">
 							<span>Discount</span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
 							<span>0.5 JOD</span>
 						</p>
 						<hr>
 						<p class="d-flex total-price">
 							<span>Total</span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
 							<span>5 JOD</span>
 						</p>
 					</div>
